@@ -1,4 +1,6 @@
-# Algorithm
-My algorithm code section
+ Algorithm
+===================
+This section is my algorithm codes.
 
-#### <i class="icon-folder-open"></i> Baekjoon Online Judge
+# Baekjoon
+Baekjoon Online Judge <https://www.acmicpc.net/>
