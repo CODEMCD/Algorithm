@@ -2,35 +2,42 @@
 
 #include <iostream>
 #include <cstdio>
+#include <algorithm>
 using namespace std;
 #define N 2001
 int num[N];
+bool dp[N][N];
 
 int main(void)
 {
 	int n;
 	scanf("%d", &n);
-	for (int i = 1; i <= n; i++)
+	for (int i = 0; i < n; i++)
 		scanf("%d", &num[i]);
+	for (int i = 0; i<n; i++)
+		dp[i][i] = true;
+
+	for (int i = 0; i<n - 1; i++) 
+		if (num[i] == num[i + 1]) {
+			dp[i][i + 1] = true;
+		}
+	
+	for (int k = 3; k <= n; k++) {
+		for (int i = 0; i <= n - k; i++) {
+			int j = i + k - 1;
+			if (num[i] == num[j] && dp[i + 1][j - 1]) {
+				dp[i][j] = true;
+			}
+		}
+	}
+
 	int m;
 	scanf("%d", &m);
 	while (m--) {
 		int s, e;
 		scanf("%d %d", &s, &e);
-		bool check = true;
-		while (s < e) {
-			if (num[s] != num[e]) {
-				check = false;
-				break;
-			}
-			s++;
-			e--;
-		}
-		if (check)
-			printf("1\n");
-		else
-			printf("0\n");
+		printf("%d\n", dp[s - 1][e - 1]);
 	}
-
+	
 	return 0;
 }
