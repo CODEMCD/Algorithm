@@ -1,30 +1,30 @@
-# 선택 정렬 (Selection Sort)
+# 삽입 정렬 (Insertion Sort)
 
 ### 개념
-![selsort](https://user-images.githubusercontent.com/34755287/38076427-86adf57a-3370-11e8-9b9e-4d4d80a5c227.jpg)
+![insertsort](https://user-images.githubusercontent.com/34755287/38076494-be36814c-3370-11e8-937f-631e3ffda42e.jpg)
+- 정렬이 완료된 영역의 다음에 위치한 데이터가 그 다음 정렬대상이다. (위 그림에서 파란색 영역이 정렬이 완료된 영역)
+- 데이터를 한 칸씩 뒤로 밀면서 삽입할 위치를 찾는 것이 효율적이다.
 
 ### 구현
 ~~~
-void SelSort(int arr[], int n)  // n : 배열크기
+void InserSort(int arr[], int n)
 {
 	int i, j;
-	int maxIdx;
-	int temp;
+	int insData;
 
-	for(i = 0; i < n-1; i++)
+	for(i = 1; i < n; i++)
 	{
-	         maxIdx = i;    // 정렬 순서상 가장 앞서는 데이터의 index
+	        insData = arr[i];   // 정렬 대상을 insData에 저장
 
-	         for(j = i + 1; j < n; j++)   // 최소값 탐색
-	         {
-	                if(arr[j] < arr[maxIdx])
-	                        maxIdx = j;
-	         }
+	        for(j = i - 1; j >= 0 ; j--)
+	        {
+	               if(arr[j] > insData) 
+	                       arr[j+1] = arr[j];    // 비교 대상 한 칸 뒤로 밀기
+	               else
+	                       break;   // 삽입 위치 찾았으니 탈출!
+	        }
 
-	         /* 교환 */
-	         temp = arr[i];
-	         arr[i] = arr[maxIdx];
-	         arr[maxIdx] = temp;
+	        arr[j+1] = insData;  // 찾은 위치에 정렬 대상 삽입!
 	}
 }
 ~~~
