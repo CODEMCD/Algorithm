@@ -1,6 +1,6 @@
  Algorithm
 ===================
-This section is my algorithm codes.
+This section is my algorithm study room.
 
 ## Baekjoon
 Baekjoon Online Judge 
