@@ -1,13 +1,22 @@
  Algorithm
 ===================
-This section is my algorithm codes.
+This section is my algorithm study room.
 
 ## Baekjoon
-Baekjoon Online Judge <https://www.acmicpc.net/>
+Baekjoon Online Judge 
+- <https://www.acmicpc.net/>
 
 ## ALGOSPOT
 For reading Algorithmic Problem Solving Strategies
+- <https://algospot.com/>
 
-## Wiki
+## SW Expert Academy
+Samsung coding test
+- <https://www.swexpertacademy.com/main/main.do>
+
+## Algorithm 정리
 - STL function(C++)
-- Various algorithm
+- Graph
+- Sort
+- Math
+- Reference Code
