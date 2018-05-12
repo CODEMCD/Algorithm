@@ -32,7 +32,7 @@ PANDORA NO
 GIAZAPX YES
 ~~~
 
-- 참고 예제 
+- 참고 예제 입력
 ~~~
 4
 URLPM
@@ -80,7 +80,7 @@ ABABABABBA
 BAAAAAAABA
 ~~~
 
-- 참고 예제  
+- 참고 예제   
 ~~~
 PRETTY YES
 GIRL YES
