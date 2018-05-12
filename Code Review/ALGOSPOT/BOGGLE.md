@@ -23,7 +23,7 @@ GIAZAPX
 ~~~
 
 - 기본 출력
-~~~~
+~~~
 PRETTY YES
 GIRL YES
 REPEAT YES
