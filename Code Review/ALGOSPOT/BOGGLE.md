@@ -5,7 +5,8 @@
 ![boggle](https://user-images.githubusercontent.com/34755287/39954880-09360f06-5602-11e8-8967-157106fe5dd8.JPG)
 
 ### 테스트 케이스
-- 기본 입력
+1) 기본 예제
+- 입력
 ~~~
 1
 URLPM
@@ -21,8 +22,7 @@ KARA
 PANDORA
 GIAZAPX
 ~~~
-
-- 기본 출력
+- 출력
 ~~~
 PRETTY YES
 GIRL YES
@@ -32,7 +32,8 @@ PANDORA NO
 GIAZAPX YES
 ~~~
 
-- 참고 예제 입력
+2) 참고 예제
+- 입력
 ~~~
 4
 URLPM
@@ -79,8 +80,7 @@ AAAAAAAAAB
 ABABABABBA
 BAAAAAAABA
 ~~~
-
-- 참고 예제 
+- 
 ~~~
 PRETTY YES
 GIRL YES
