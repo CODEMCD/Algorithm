@@ -2,7 +2,31 @@
 
 ## 정의
 - String은 문자열을 담기 위한 container이다.
-- #include <string> 선언이 필요하다.
+- #include<string> 선언이 필요하다.
+
+## 멤버 함수
+### .assign: 문자열 할당
+- ( 문자열 ): 문자열을 할당한다.
+- ( 개수, 문자 ): 문자를 해당 개수만큼 할당한다.
+- ( 문자열, 시작 위치, 개수 ): 매개변수 문자열의 시작 위치부터 개수만큼을 호출한 문자열에 할당한다.
+~~~
+string s1, s2, s3;
+s1.assign("ABCDEFG");    // s1 = "ABCDEFG"
+s2.assign(3, 'a');       // s2 = "aaa"
+s3.assign(s1, 2, 4);     // s3 = "CDEF" (문자열 s1의 인덱스 2부터 4개를 복사하여 할당한다.)
+~~~
+
+### .append: +연산자의 역할처럼 문자열 끝에 추가
+- ( 문자열 ): 문자열을 추가한다.
+- ( 개수, 문자 ): 문자를 해당 개수만큼 추가한다.
+- ( 문자열, 시작 위치, 개수 ): 매개변수 문자열의 시작 위치부터 개수만큼을 호출한 문자열에 추가한다.
+~~~
+string s1, s2;
+s1.append("ABCDEF");    // s1 = "ABCDEF"
+s1.append(3, 'x');      // s1 = "ABCDEFxxx"
+s2.append(s1, 2, 4);    // s2 = "CDEF"
+s2 += "x";              // s2 = "CDEFx"
+~~~
 
 ## 생성
 <pre><code>string str = "abcd";
