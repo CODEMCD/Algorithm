@@ -1,4 +1,4 @@
-# Sring 함수
+# String 함수
 
 ## 정의
 - String은 문자열을 담기 위한 container이다.
