@@ -21,7 +21,7 @@
 4
 ```
 
-2. 부분 수열의 한 시작점에서 여러가지 케이스가 나타나는 경구
+2. 부분 수열의 한 시작점에서 여러가지 케이스가 나타나는 경우
 - 입력
 ```
 1
@@ -42,6 +42,11 @@
   - 시간 복잡도: ```1 + 2 + 3 + ... + n```이므로, O(n^2)이다.
 
 - Top-down
+	- chache[N]: 현재 인덱스에서 가장 긴 증가 부분 수열의 길이를 저장한다.(메모이제이션)
+	- S[N]: 입력 배열
+	- lis(start) = S[start]에서 시작하는 부분 증가 수열 중 최대의 길이를 반환한다.
+	- 별도의 기저 사례 없이, for문의 조건문을 이용한다.
+	- 시간 복잡도: 총 n개의 부분 문제를 갖고, 하나를 해결할 때마다 n번 연산하므로 O(n^2)이다.
 
 ## 결과 코드
 - Bottom-up
@@ -89,6 +94,54 @@ int main(void)
 			if (max < dp[i])
 				max = dp[i];
 
+		printf("%d\n", max);
+	}
+
+	return 0;
+}
+```
+
+- Top-down
+```
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+#define max(a, b) ((a)>(b)?(a):(b))
+#define N 501
+int n;
+int cache[N], S[N];
+
+int lis(int start)
+{
+	int &ret = cache[start];
+	if (ret != -1) return ret;
+	ret = 1;
+	for (int next = start + 1; next < n; ++next)
+		if (S[start] < S[next])
+			ret = max(ret, lis(next) + 1);
+	return ret;
+}
+
+int main(void)
+{
+	int tc;
+	scanf("%d", &tc);
+	while (tc--) {
+		memset(cache, -1, sizeof(cache));
+		memset(S, 0, sizeof(S));
+
+		scanf("%d", &n);
+		for (int i = 0; i < n; i++)
+			scanf("%d", &S[i]);
+		int max = 0;
+		for (int i = 0; i < n; i++) {
+			int res = lis(i);
+			if (max < res)
+				max = res;
+		}
 		printf("%d\n", max);
 	}
 
