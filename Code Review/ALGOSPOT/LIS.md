@@ -2,6 +2,8 @@
 
 ## 문제 개요
 
+![lis](https://user-images.githubusercontent.com/34755287/42437607-91671ad2-8398-11e8-9a22-5f6302fac5c1.JPG)
+
 ## 테스트 케이스
 1. 기본 테스트 케이스
 - 입력
