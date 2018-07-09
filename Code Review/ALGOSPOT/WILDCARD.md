@@ -2,6 +2,8 @@
 
 ## 문제 개요
 
+![wildcard](https://user-images.githubusercontent.com/34755287/42437682-c810ed9c-8398-11e8-926c-560c9044aa56.JPG)
+
 ## 테스트 케이스
 1. 기본 테스트 케이스
 - 입력
