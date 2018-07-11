@@ -30,7 +30,7 @@
   2. 길이 4인 조각의 난이도 +4글자 빼고 나머지 수열에 대한 최적해
   3. 길이 5인 조각의 난이도 +5글자 빼고 나머지 수열에 대한 최적해
   - begin: 부분 수열의 시작 위치, memorize(): 최소 난이도를 반환하는 함수, returnLevel(): 해당 수열의 난이도를 반환하는 함수
-  - ___memorize(begin) = min(memorize(begin + L), returnLevel(N[begin])), L: 3 ~ 5___
+  - ___memorize(begin) = min(memorize(begin + L) + returnLevel(N[begin])), L: 3 ~ 5___
 - returnLevel() 함수
   - checkLevel() 함수
   1. 수열의 길이 3, 4, 5에 대해서만 적용할 수 있는 함수이다.
