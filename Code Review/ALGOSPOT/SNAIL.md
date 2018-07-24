@@ -1,4 +1,4 @@
-# SNAIL
+# 장마가 찾아왔다
 
 ## 문제 링크
 - https://algospot.com/judge/problem/read/SNAIL
