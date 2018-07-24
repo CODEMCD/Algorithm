@@ -14,9 +14,9 @@ int n, m;
 //m일 전까지 n미터를 기어올라갈 수 있는 경우의 수
 int climb(int days, int climbed)
 {
-  //기저 사례: m일이 모두 지난 경우
+	//기저 사례: m일이 모두 지난 경우
 	if (days == m) return climbed >= n ? 1 : 0;
-  //메모이제이션
+	//메모이제이션
 	int &ret = cache[days][climbed];
 	if (ret != -1) return ret;
 	return ret = climb(days + 1, climbed + 2) + climb(days + 1, climbed + 1);
@@ -28,7 +28,7 @@ int climb(int days, int climbed)
   - 점화식: ```climb(C) = climb(C + [1]) + climb(C + [2])```
     - C + [x]는 배열 C의 맨 뒤에 x를 덧붙인 결과이다.
     - 이 점화식은 C의 종류가 너무 많기 때문에 메모이제이션을 활용할 수 없다!
-    - 날씨 조합C => C의 길이와 C의 원소의 합만을 활용한다
+    - 날씨 조합C => C의 길이와 C의 원소의 합만을 활용한다.
   - 동적 계획법
   - climbed(days, climbed): 지금까지 만든 날씨 조합C의 크기가 days, 그 원소들의 합이 climbed일 때, C를 완성해서 원소의 합이 n이상이 되게 하는
   방법의 수
