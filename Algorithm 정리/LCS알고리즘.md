@@ -6,5 +6,5 @@
 
 ![lcs](https://user-images.githubusercontent.com/34755287/43619771-65199a38-970a-11e8-8d67-473be3c2b177.JPG)
 
-## 알고리즘
+## 구현
 - [백준 LCS 문제 분석](https://github.com/CODEMCD/Algorithm/blob/master/Code%20Review/Baekjoon/LCS.md)
