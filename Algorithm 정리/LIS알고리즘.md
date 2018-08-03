@@ -43,7 +43,7 @@ int _lower_bound(int start, int end, int target)
 		else
 			end = mid;
 	}
-	return end + 1;
+	return end;
 }
 
 int main()
@@ -60,7 +60,7 @@ int main()
 			lis[++idx] = num[i];
 		else {
 			int next = _lower_bound(0, idx, num[i]);
-			lis[next - 1] = num[i];
+			lis[next] = num[i];
 		}
 	}
 	printf("%d\n", idx + 1);
