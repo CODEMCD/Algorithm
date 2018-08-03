@@ -29,6 +29,10 @@ AAK
   str1[i - 1] == str2[j - 1] => dp[i][j] = dp[i - 1][j - 1] + 1
   str1[i - 1] != str2[j - 1] => MAX(dp[i - 1][j], dp[i][j - 1])
   ```
+  - 예제 배열 최종 결과 그림
+  
+  ![lcs1](https://user-images.githubusercontent.com/34755287/43620018-9af15aa0-970b-11e8-8b97-b11e604c5157.JPG)
+  
   - 시간 복잡도: str1, str2 중 최대 문자열 길이를 N이라 할때, ```O(N^2)```
   
 - LCS 문자열 구하기
@@ -44,6 +48,10 @@ AAK
         maxLen--
         break
   ```
+  - 예제 배열 그림
+  
+  ![lcs2](https://user-images.githubusercontent.com/34755287/43620019-9b1a2426-970b-11e8-9ab8-f66e4849331c.JPG)
+  
   - 시간복잡도: ```O(N^2)```
   
 ## 결과 코드
