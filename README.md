@@ -1,17 +1,12 @@
- Algorithm
-===================
-This section is my algorithm study room.
+# Algorithm
+- 알고리즘 공부 관련
 
-## Baekjoon
-Baekjoon Online Judge 
+## 알고리즘 사이트
+### 1. Baekjoon Online Judge 
 - <https://www.acmicpc.net/>
-
-## ALGOSPOT
-For reading Algorithmic Problem Solving Strategies
+### 2. ALGOSPOT
 - <https://algospot.com/>
-
-## SW Expert Academy
-Samsung coding test
+### 3. SW Expert Academy
 - <https://www.swexpertacademy.com/main/main.do>
 
 ## Algorithm 정리
@@ -20,3 +15,9 @@ Samsung coding test
 - Sort
 - Math
 - Reference Code
+
+## CODE
+- 알고리즘 문제에 대한 코드 모음
+
+## CODE REVIEW
+- 알고리즘 문제에 대한 해결 방법 및 코드 분석
