@@ -11,10 +11,10 @@
 
 ## Algorithm 정리
 - STL function(C++)
-- Graph
-- Sort
+- 유명 알고리즘
 - Math
 - Reference Code
+- 참고사항: 자료구조 관련 개념 자료구조 레포지토리가서 코드랑 개념 같이 다시 정리할 
 
 ## CODE
 - 알고리즘 문제에 대한 코드 모음
