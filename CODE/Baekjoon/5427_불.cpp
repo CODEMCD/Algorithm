@@ -7,7 +7,7 @@
 #include <queue>
 using namespace std;
 #define N 1001
-//상근이의 위치가 몇 초후인지 저장하는 배열
+//각 좌표에서 상근이가 몇 초후에 도착했는지 저장하는 배열
 int dist[N][N];
 int my[4] = { -1, 0, 1, 0 };
 int mx[4] = { 0, 1, 0, -1 };
@@ -18,7 +18,9 @@ int main()
 	while (tc--) {
 		memset(dist, 0, sizeof(dist));
 
+		//가로, 세로 입력 주의
 		int w, h; scanf("%d %d", &w, &h);
+		//입력배열
 		char building[N][N];
 		for (int i = 0; i < h; ++i)
 			scanf("%s", building[i]);
