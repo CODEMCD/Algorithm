@@ -5,7 +5,6 @@
 #include <cstring>
 #include <algorithm>
 #include <vector>
-#include <string>
 using namespace std;
 
 //동서북남
